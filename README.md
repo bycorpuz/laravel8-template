@@ -2,9 +2,13 @@
 Laravel 8 template with RBAC and Social Media Login
 
 Step 1: git clone https://github.com/bycorpuz/laravel8-template.git
+
 Step 2: run composer install
+
 Step 3: run php artisan key:generate
+
 Step 4: configure .env file
+
 ```
 add the following for RECAPTCHA
 
