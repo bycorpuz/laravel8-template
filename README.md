@@ -11,15 +11,20 @@ Step 4: configure .env file
     RECAPTCHA_SITE_KEY=YOUR_RECAPTCHA_SITE_KEY
     RECAPTCHA_SECRET_KEY=YOUR_RECAPTCHA_SECRET_KEY
     
+    add the following for Google Login
+    
     GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
     GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
     GOOGLE_REDIRECT=YOUR_GOOGLE_REDIRECT
+    
+    add the following for Facebook Login
 
     FACEBOOK_CLIENT_ID=YOUR_FACEBOOK_CLIENT_ID
     FACEBOOK_CLIENT_SECRET=YOUR_FACEBOOK_CLIENT_SECRET
     FACEBOOK_REDIRECT=YOUR_FACEBOOK_REDIRECT
 
 Step 5: Update /vendor/laravel/ui/auth-backend/AuthenticateUsers.php with the below code
+```
 public function login(Request $request){
     $secretKey = 'CAPTCHA_SECRET_KEY';
     $responseKey = $request['g-recaptcha-response'];
@@ -54,3 +59,4 @@ public function login(Request $request){
         return response()->json(['error_captcha' => 'Invalid Captcha, Please Try Again.']);
     }
 }
+```
