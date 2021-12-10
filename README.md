@@ -23,8 +23,28 @@ FACEBOOK_CLIENT_ID=YOUR_FACEBOOK_CLIENT_ID
 FACEBOOK_CLIENT_SECRET=YOUR_FACEBOOK_CLIENT_SECRET
 FACEBOOK_REDIRECT=YOUR_FACEBOOK_REDIRECT
 ```
+Step 5: Update /config/app.php with the below code
+```
+'recaptcha_site_key' => env('RECAPTCHA_SITE_KEY', ''),
+'recaptcha_secret_key' => env('RECAPTCHA_SECRET_KEY', ''),
+```
 
-Step 5: Update /vendor/laravel/ui/auth-backend/AuthenticateUsers.php with the below code
+Step 6: Update /config/services.php with the below code
+```
+'google' => [
+    'client_id' => env('GOOGLE_CLIENT_ID'),
+    'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+    'redirect' => env('GOOGLE_REDIRECT'),
+],
+
+'facebook' => [
+    'client_id' => env('FACEBOOK_CLIENT_ID'),
+    'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+    'redirect' => env('FACEBOOK_REDIRECT'),
+],
+```
+
+Step 7: Update /vendor/laravel/ui/auth-backend/AuthenticateUsers.php with the below code
 ```
 public function login(Request $request){
     $secretKey = config('app.recaptcha_secret_key');
