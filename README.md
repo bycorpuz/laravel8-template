@@ -27,13 +27,13 @@ FACEBOOK_CLIENT_ID=YOUR_FACEBOOK_CLIENT_ID
 FACEBOOK_CLIENT_SECRET=YOUR_FACEBOOK_CLIENT_SECRET
 FACEBOOK_REDIRECT=YOUR_FACEBOOK_REDIRECT
 ```
-Step 5: Update /config/app.php with the below code
+Step 5: Update /config/app.php add the below code
 ```
 'recaptcha_site_key' => env('RECAPTCHA_SITE_KEY', ''),
 'recaptcha_secret_key' => env('RECAPTCHA_SECRET_KEY', ''),
 ```
 
-Step 6: Update /config/services.php with the below code
+Step 6: Update /config/services.php add the below code
 ```
 'google' => [
     'client_id' => env('GOOGLE_CLIENT_ID'),
