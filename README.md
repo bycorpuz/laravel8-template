@@ -5,28 +5,29 @@ Step 1: git clone https://github.com/bycorpuz/laravel8-template.git
 Step 2: run composer install
 Step 3: run php artisan key:generate
 Step 4: configure .env file
+```
+add the following for RECAPTCHA
 
-    add the following for RECAPTCHA
-    
-    RECAPTCHA_SITE_KEY=YOUR_RECAPTCHA_SITE_KEY
-    RECAPTCHA_SECRET_KEY=YOUR_RECAPTCHA_SECRET_KEY
-    
-    add the following for Google Login
-    
-    GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
-    GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
-    GOOGLE_REDIRECT=YOUR_GOOGLE_REDIRECT
-    
-    add the following for Facebook Login
+RECAPTCHA_SITE_KEY=YOUR_RECAPTCHA_SITE_KEY
+RECAPTCHA_SECRET_KEY=YOUR_RECAPTCHA_SECRET_KEY
 
-    FACEBOOK_CLIENT_ID=YOUR_FACEBOOK_CLIENT_ID
-    FACEBOOK_CLIENT_SECRET=YOUR_FACEBOOK_CLIENT_SECRET
-    FACEBOOK_REDIRECT=YOUR_FACEBOOK_REDIRECT
+add the following for Google Login
+
+GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
+GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
+GOOGLE_REDIRECT=YOUR_GOOGLE_REDIRECT
+
+add the following for Facebook Login
+
+FACEBOOK_CLIENT_ID=YOUR_FACEBOOK_CLIENT_ID
+FACEBOOK_CLIENT_SECRET=YOUR_FACEBOOK_CLIENT_SECRET
+FACEBOOK_REDIRECT=YOUR_FACEBOOK_REDIRECT
+```
 
 Step 5: Update /vendor/laravel/ui/auth-backend/AuthenticateUsers.php with the below code
 ```
 public function login(Request $request){
-    $secretKey = 'CAPTCHA_SECRET_KEY';
+    $secretKey = config('app.recaptcha_secret_key');
     $responseKey = $request['g-recaptcha-response'];
     $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $secretKey . '&response=' . $responseKey;
     $response = file_get_contents($url);
