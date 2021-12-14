@@ -1,0 +1,14 @@
+#dtr_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+#dtr_date {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -2mm;
+}
+#dtr_time {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 5mm;
+}

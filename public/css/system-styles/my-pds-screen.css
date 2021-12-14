@@ -1,0 +1,138 @@
+@media screen {
+    table {
+        font-family: Calibri;
+        background-color:#FFF;
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+
+    table, th {
+        border: 2px solid black;
+    }
+
+    table th {
+        background-color:#969696;
+        color: white;
+        padding: 5px;
+    }
+
+    table td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    td.data-1 {
+        padding: 5px 5px 5px 5px;
+    }
+
+    td.data-2 {
+        padding: 30px 5px 5px 5px;
+    }
+
+    td.data-3 {
+        padding: 10px 10px 10px 10px;
+    }
+
+    div.data-radio-1 {
+        margin-top: 5px;
+    }
+
+    div.data-radio-2 {
+        margin-top: 5px;
+        margin-left: 98px;
+    }
+
+    td.title-1 {
+        padding-top: 33px;
+    }
+
+    span.title-2, td.title-2 {
+        padding-left: 50px;
+    }
+
+    td.brdrbtm {
+        border-bottom: 2px solid black;
+    }
+
+    td.brdrlft {
+        border-left: 2px solid black;
+    }
+
+    td.brdrnotop {
+        border-top: 0px;
+    }
+
+    td.brdrnoryt {
+        border-right: 0px;
+    }
+
+    td.brdrnobtm {
+        border-bottom: 0px;
+    }
+
+    td.brdrnolft {
+        border-left: 0px;
+    }
+
+    td.title-3 {
+        padding-left: 98px;
+        border: 0px;
+    }
+
+    table.table-2 {
+        border: 0px;
+    }
+
+    .first-half {
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+    .second-half {
+        float: right;
+        width: 50%;
+        text-align: center;
+    }
+
+    td.title-bg {
+        background-color:#eaeaea;
+    }
+
+    .lastInput {
+        margin-top: 10px;
+    }
+
+    .lastInput-10 {
+        margin-top: -10px;
+    }
+
+    span.title-3 {
+        padding-left: 20px;
+    }
+
+    td.v-align-top {
+        vertical-align: top;
+    }
+
+    td.v-align-middle {
+        vertical-align: middle;
+    }
+
+    .form-control {
+        background-color: floralwhite;
+        font-weight: bold;
+    }
+    
+    /* Hide the arrow on input type number */
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+}

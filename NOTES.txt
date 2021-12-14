@@ -1,0 +1,7 @@
+E-mail (localhost)
+1. use smtp on .env
+2. use smtp on config/mail.php on default
+
+E-mail (server)
+1. use sendmail on .env
+2. use sendmail on config/mail.php on default

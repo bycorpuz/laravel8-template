@@ -1,0 +1,26 @@
+input[type="text"]:focus {
+    border: 3px solid #474544 !important;
+}
+input[type="date"]:focus {
+    border: 3px solid #474544 !important;
+}
+input[type="number"]:focus {
+    border: 3px solid #474544 !important;
+}
+input[type="search"]:focus {
+    border: 3px solid #474544 !important;
+}
+textarea:focus {
+    border: 3px solid #474544 !important;
+}
+
+select:focus {
+    border: 3px solid #474544 !important;
+}
+.select2-container :focus {
+    border: 3px solid #474544 !important;
+}
+
+.swal2-modal .swal2-text {
+    text-align: center;
+}
