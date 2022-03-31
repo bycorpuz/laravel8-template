@@ -7,8 +7,6 @@ Step 2: run composer install
 
 Step 3: configure .env file
 
-Step 4: run php artisan key:generate
-
 ```
 add the following for RECAPTCHA
 
@@ -27,6 +25,8 @@ FACEBOOK_CLIENT_ID=YOUR_FACEBOOK_CLIENT_ID
 FACEBOOK_CLIENT_SECRET=YOUR_FACEBOOK_CLIENT_SECRET
 FACEBOOK_REDIRECT=YOUR_FACEBOOK_REDIRECT
 ```
+Step 4: run php artisan key:generate
+
 Step 5: Update /config/app.php add the below code
 ```
 'recaptcha_site_key' => env('RECAPTCHA_SITE_KEY', ''),
