@@ -5,9 +5,9 @@ Step 1: git clone https://github.com/bycorpuz/laravel8-template.git
 
 Step 2: run composer install
 
-Step 3: run php artisan key:generate
+Step 3: configure .env file
 
-Step 4: configure .env file
+Step 4: run php artisan key:generate
 
 ```
 add the following for RECAPTCHA
